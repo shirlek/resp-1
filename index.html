@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Stats preview card component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    body{background-color: black;}
+    *{box-sizing: border-box;margin:0;padding:0; color:white;}
+    .main{height: 50vh;width: 80vw;position:relative;top:20vh;left:10vw;background-color:hsl(244, 38%, 16%);border-radius: 0.7em;}
+    #image{float:right; height:100%; width:50%;border-top-right-radius: 0.7em;border-bottom-right-radius: 0.7em;}
+    #content{height:100%; width: 35%;position:absolute;left:6%; top:3%; text-align: left;}
+    h2{font-size: 2em; margin:1em 0em;}
+    #trash{margin: 2em 0em;}
+    span{color:hsl(277, 64%, 61%) }
+    ul{list-style-type: none; width:100%;margin-top: 15%;}
+    p{margin:0.5em 0em; line-height: 1.5;}
+    li p{font-size: 0.5em;font-weight: normal;}
+    li{display:inline-block;margin-right:9%; font-size:1.5em; font-weight: bold;}
+    @media (max-width:900px){
+      .main{width:90vw; height:80vh;margin:auto; top:10vh; left:0.8vw}
+      #image{
+        float: none;
+        width:100%;
+        height:35%;
+        border-top-left-radius:0.7em;
+        border-bottom-right-radius: 0 ;
+      }
+      #content{width:85%;height:65%;top:35%;left:9%}
+      ul{width:100%;margin:auto;text-align: center;}
+      li{display: block;}
+
+    }
+  </style>
+</head>
+<body>
+  <div class="main">
+    <img src="./images/image-header-desktop.jpg" alt="image" id="image">
+    <div id="content">
+      <h2>Get <span>insights</span> that help you grow your business.</h2>
+      <p id="trash">Discover the benifits of data analytics and make better decisions regarding revenue, custmor experience, and overall efficiency.</p>
+      <ul><li>10K+<P>COMPANIES</P></li><li>314<P>TEMPLATES</P></li><li>12M+<P>QUERIES</P></li></ul>
+    </div>
+  </div>
+</body>
+</html>
